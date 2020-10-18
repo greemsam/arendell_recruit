@@ -1,0 +1,139 @@
+@charset "UTF-8";
+html, body{
+  height:100%;
+}
+#recruit-page{
+  width:1000px; 
+  margin:0 auto;
+}
+#recruit-page h1{
+  font-size:36px;
+  color:#1a3968;
+}
+#recruit-page p{
+  margin-top:10px;
+}
+#recruit-page .recruit-chart{
+  width:100%;
+  border-collapse: collapse;
+  margin-top:50px;
+}
+#recruit-page .recruit-chart thead{
+  background:#f2f2f2;
+}
+#recruit-page .recruit-chart td{
+  padding:10px;
+  border: 1px solid #ddd;
+}
+#recruit-page .recruit-chart td ul li ul{
+  margin-top:20px;
+}
+#recruit-page .recruit-chart td span{
+  color:#000;
+  font-weight: 600;
+}
+#recruit-page .recruit-chart .common-thing td{
+  background:#f2f2f2;
+  padding:20px 10px;
+  text-align: center;
+}
+#recruit-page .recruit-page__condition>*{
+  float:left; 
+}
+#recruit-page .recruit-page__condition{
+  border-bottom:1px solid #ddd;
+  padding:30px 0;
+}
+#recruit-page .recruit-page__condition h2{
+  width:220px;
+  color:#1a3968;
+}
+#recruit-page .recruit-page__condition ul{
+  font-size:18px;
+}
+#recruit-page .recruit-page__condition ul li{
+  line-height: 32px;
+}
+#recruit-page button{
+  display:block;
+  width:300px;
+  height:70px;
+  margin: 30px auto;
+  background:#1a3968;
+  color:#fff;
+  font-size:28px;
+  border-radius:35px;
+}
+#recruit-popup{
+  display:none;
+  top:0;
+  left:0;
+  position: fixed;
+  width:100%; 
+  height:100%;
+  background:rgba(0,0,0,0.2);
+}
+#recruit-popup.show{
+  display:block;
+}
+#recruit-popup img{
+  width:500px;
+  position: fixed;
+  top:50%;
+  left:50%;
+  margin-left:-250px;
+  margin-top:-250px;
+}
+@media screen and (max-width: 999px){
+  #recruit-page{
+    padding:10px;
+    width:100%;
+  }
+  #recruit-page h1{
+    
+    font-size:1.6rem;
+  }
+  #recruit-page .recruit-chart tr:nth-child(1) td{
+    text-align: center;
+  }
+  #recruit-page .recruit-chart td:nth-child(1){
+    width:16%;
+    text-align: center;
+  }
+
+  #recruit-page .recruit-chart td:nth-child(3){
+    width:40%;
+  }
+  #recruit-page .recruit-chart td:nth-child(4){
+    width:12%;
+    
+  }
+  #recruit-page .recruit-chart td{
+    padding:6px 2px;
+  }
+  #recruit-page .recruit-chart td,
+  #recruit-page .recruit-chart td *{
+    font-size:0.9rem;
+    text-indent:4px; 
+    margin-left:2px; 
+  }
+  #recruit-page .recruit-page__condition ul{
+    margin-top:20px;
+    font-size:1rem;
+  }
+  #recruit-page .recruit-page__condition ul li{
+    line-height: 1.8rem;
+  }
+  #recruit-page button{
+    width:100%;
+    height:50px; 
+    font-size:1.2rem;
+  }
+  #recruit-popup img{
+    width:100%;
+    top:25%;
+    left:0;
+    margin-left:0;
+    margin-top:0;
+  }
+}
